@@ -435,36 +435,6 @@ class tripsController {
       errorResponse(res, 500, error.message);
     }
   }
-	static async rejectTrip(req, res) {
-		try {
-			const { params: { tripId }, user: { preferedLang } } = req;
-			const affectedRow = await travelRequests.update(
-				{
-					status: 'rejected'
-				},
-				{
-					where: { id: tripId },
-					returning: true,
-					plain: true
-				}
-			);
-			const { type, accommodation, from, to, departureDate, returnDate, reason, status, stops } = affectedRow[1];
-			const response = {
-				type,
-				accommodation,
-				from,
-				to,
-				departureDate,
-				returnDate,
-				reason,
-				status,
-				stops
-			};
-			successResponse(res, 200, setLanguage(preferedLang).__('TripRejectSuccess'), response);
-		} catch (error) {
-			errorResponse(res, 500, error.message);
-		}
-	}
 
   /**
    * @description Edit one way or return or multi city trip requests on one go
