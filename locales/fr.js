@@ -130,5 +130,6 @@
     "notFoundAccommodation":"Logement non trouvé !!!",
 	"ThanksYouRating":"Merci pour votre évaluation",
     "thanksYouAgain":"Merci encore pour votre note. Veuillez également prendre le temps de laisser des commentaires.",
-    "validRatings": "veuillez fournir une évaluation valide [1-5]"
+    "validRatings": "veuillez fournir une évaluation valide [1-5]",
+	"PleaseOnly": "Seuls un administrateur de voyages et un fournisseur d'hébergement sont autorisés à créer des hébergements"
 }

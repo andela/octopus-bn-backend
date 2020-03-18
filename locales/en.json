@@ -132,6 +132,7 @@
 	"notFoundAccommodation":"Accommodation not found!!!",
 	"ThanksYouRating":"Thank you for your rating",
 	"thanksYouAgain":"Thank you for your rating again. Please take your time to leave some feedback too",
-	"validRatings": "please provide a valid rating [1-5]"
+	"validRatings": "please provide a valid rating [1-5]",
+	"PleaseOnly": "Only a travel administrator and accommodation supplier are allowed to create accommodations"
 }
 
